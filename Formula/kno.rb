@@ -5,21 +5,21 @@
 class Kno < Formula
   desc "Measure which of your data earns its place in an LLM agent"
   homepage "https://github.com/uknoAI/kno"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uknoAI/kno/releases/download/v0.1.1/kno_0.1.1_darwin_amd64.tar.gz"
-      sha256 "3bfa04bcc34b872edbedf2cc83317e8d35cb32dbf931c4bd2bd458db45e15795"
+      url "https://github.com/uknoAI/kno/releases/download/v0.1.2/kno_0.1.2_darwin_amd64.tar.gz"
+      sha256 "c3553dcf0b18271da67622f35a607d88f5f80726e4b78e79d6e8b0102289bb4c"
 
       def install
         bin.install "kno"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uknoAI/kno/releases/download/v0.1.1/kno_0.1.1_darwin_arm64.tar.gz"
-      sha256 "2011a1e532beda6932195c240fa41b252bba7a26f745a4ccbac3c2b2fcb28633"
+      url "https://github.com/uknoAI/kno/releases/download/v0.1.2/kno_0.1.2_darwin_arm64.tar.gz"
+      sha256 "4f05cec1b5bc0e8ba6bc6f6945be09a46567c4059ea2ea7f64273e14335dc33c"
 
       def install
         bin.install "kno"
@@ -29,15 +29,15 @@ class Kno < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uknoAI/kno/releases/download/v0.1.1/kno_0.1.1_linux_amd64.tar.gz"
-      sha256 "3f6df988a354ee749f31d393aa762d960f95ffb5a38e4de585698fd4a984dc79"
+      url "https://github.com/uknoAI/kno/releases/download/v0.1.2/kno_0.1.2_linux_amd64.tar.gz"
+      sha256 "c2c72ba6a11b2ec91cf10c23b250ec6b609e1d7b474b6e95e3733a24a5ca00b7"
       def install
         bin.install "kno"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uknoAI/kno/releases/download/v0.1.1/kno_0.1.1_linux_arm64.tar.gz"
-      sha256 "bdc224f6547572258a6e34ea3514ea74daf6e88a4fe142aa376e9710870320a3"
+      url "https://github.com/uknoAI/kno/releases/download/v0.1.2/kno_0.1.2_linux_arm64.tar.gz"
+      sha256 "ce189c541d0622f78c903c63264a7ae62b48e1b83056239ec2d33d93238f5515"
       def install
         bin.install "kno"
       end
